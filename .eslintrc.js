@@ -89,6 +89,7 @@ module.exports = {
      */
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-var-requires': 'off',
+    '@typescript-eslint/interface-name-prefix': ['error', 'always'],
 
     /**
      * 规则配置: https://eslint.bootcss.com/docs/rules/
@@ -228,6 +229,12 @@ module.exports = {
       files: ['*.vue'],
       rules: {
         indent: 'off',
+      },
+    },
+    {
+      files: ['shims-*'],
+      rules: {
+        '@typescript-eslint/interface-name-prefix': 'off',
       },
     },
   ],
