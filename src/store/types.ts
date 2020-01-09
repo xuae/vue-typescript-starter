@@ -1,5 +1,5 @@
-import { ITestState } from '@/store/test/types';
+import { TestState } from '@/store/test/types';
 
-export interface IState {
-  test: ITestState;
+export interface State {
+  test: TestState;
 }
