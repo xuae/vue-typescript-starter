@@ -1,6 +1,6 @@
-import { ITestList, ITestState } from '@/store/test/types';
+import { TestList, TestState } from '@/store/test/types';
 
-const list: ITestList[] = [
+const list: TestList[] = [
   {
     id: '1',
     name: 'option 1',
@@ -21,7 +21,7 @@ const list: ITestList[] = [
   },
 ];
 
-export const testState: ITestState = {
+export const testState: TestState = {
   list: list,
   selectedId: '',
 };

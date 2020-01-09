@@ -1,12 +1,12 @@
 // test state 接口
-export interface ITestState {
-  list: ITestList[];
+export interface TestState {
+  list: TestList[];
   selectedId: string;
 }
 
 // test list 接口
-export interface ITestList {
+export interface TestList {
   id: string;
   name: string;
-  children?: null | ITestList[];
+  children?: null | TestList[];
 }

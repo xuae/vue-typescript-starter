@@ -89,7 +89,7 @@ module.exports = {
      */
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-var-requires': 'off',
-    '@typescript-eslint/interface-name-prefix': ['error', 'always'],
+    '@typescript-eslint/interface-name-prefix': ['error', 'never'], // always
 
     /**
      * 规则配置: https://eslint.bootcss.com/docs/rules/
@@ -161,7 +161,7 @@ module.exports = {
       },
     ],
     // 'space-before-function-paren': ['error', 'always'], // 要求或禁止函数圆括号之前有一个空格
-    'indent': [2, 2],
+    'indent': [2, 2, { SwitchCase: 1 }],
     'no-tabs': ['error', { allowIndentationTabs: true }],
 
     /**
