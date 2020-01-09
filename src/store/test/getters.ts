@@ -1,8 +1,8 @@
 import { GetterTree } from 'vuex';
-import { IState } from '@/store/types';
-import { ITestState } from '@/store/test/types';
+import { State } from '@/store/types';
+import { TestState } from '@/store/test/types';
 
-export const testGetters: GetterTree<ITestState, IState> = {
+export const testGetters: GetterTree<TestState, State> = {
   // 获取第一级全部的 id 数组
   rootIds(state): string[] {
     const arr: string[] = [];

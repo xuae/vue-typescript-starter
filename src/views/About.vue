@@ -9,13 +9,13 @@
 
 <script lang="ts">
   import { Component, Vue } from 'vue-property-decorator';
-  import { ITestList } from '@/store/test/types';
   import { namespace } from 'vuex-class';
+  import { TestList } from '@/store/test/types';
 
   const testModule = namespace('test');
   @Component
   export default class About extends Vue {
-    @testModule.State('list') list!: ITestList[];
+    @testModule.State('list') list!: TestList[];
     @testModule.State('selectedId') selectedId!: string;
     @testModule.Mutation('setSelectedId') setSelectedId!: Function;
   }
